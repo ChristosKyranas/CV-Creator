@@ -1,0 +1,26 @@
+Functional
+1. General Information 
+	Name: Vasilis
+	Address: N.Zerva
+	Telephone: (Home) 23213	(Mobile) 312312
+	Email: papaki@hotmail.com
+2. Professional Profile
+	Hello World!!!
+3. Skills And Experience
+	3.1 Skills And Experience On apple
+		* texnikos
+	3.2 Skills And Experience On samsung
+	3.3 Skills And Experience On huawei
+		* pwlhths
+		* texnikos
+4. Career Summary
+	* apple, texnikos, 13/05/2016 to 15/05/2017
+	* samsung, , 12/05/2015 to 13/05/2016
+5. Education And Training
+	* qual, esta, ioannina, 12/05/2017 to 22/05/2017
+6. Further Courses
+	* fix, esta, ioannina, 12/05/2017 to 13/05/2017
+7. Additional Information
+	i am pro now
+8. Interests
+	fix code
