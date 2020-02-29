@@ -1182,7 +1182,7 @@ public class CombinedCv extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -1193,5 +1193,5 @@ public class CombinedCv extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 }

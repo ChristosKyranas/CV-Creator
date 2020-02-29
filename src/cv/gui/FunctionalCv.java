@@ -1,53 +1,24 @@
 package cv.gui;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
+import cv.generators.GeneratorFactory;
+import cv.generators.IGenerator;
+import cv.main.Cv;
+import cv.main.CvFactory;
+import cv.main.Section;
+import cv.main.SectionFactory;
+import cv.parsers.IParser;
+import cv.parsers.ParserFactory;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.text.MaskFormatter;
-
-import cv.generators.*;
-import cv.main.*;
-import cv.parsers.*;
-
-import javax.swing.DefaultListModel;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JList;
-import javax.swing.JMenuBar;
-import javax.swing.JOptionPane;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.ListModel;
-import javax.swing.JTextField;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import java.awt.Frame;
-import java.awt.Dialog.ModalExclusionType;
-import java.awt.Dimension;
-import java.awt.Window.Type;
+import javax.swing.*;
 import javax.swing.border.BevelBorder;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.io.BufferedReader;
+import javax.swing.text.MaskFormatter;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import javax.swing.JFormattedTextField;
 
 public class FunctionalCv extends JFrame {
 
@@ -1068,7 +1039,7 @@ public class FunctionalCv extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -1079,5 +1050,5 @@ public class FunctionalCv extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 }

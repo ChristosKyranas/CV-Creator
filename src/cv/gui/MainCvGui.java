@@ -1,36 +1,14 @@
 package cv.gui;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-
-import java.awt.BorderLayout;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.awt.event.ActionEvent;
-import java.awt.Toolkit;
-import javax.swing.JTextField;
-import javax.swing.JTextPane;
-import javax.swing.JLabel;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-
 import com.jgoodies.forms.factories.DefaultComponentFactory;
 
-import javax.swing.ImageIcon;
-import java.awt.Font;
-import javax.swing.JRadioButton;
+import javax.swing.*;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
 
 
 
@@ -44,7 +22,7 @@ public class MainCvGui {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
+		/*EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					MainCvGui window = new MainCvGui();
@@ -53,7 +31,13 @@ public class MainCvGui {
 					e.printStackTrace();
 				}
 			}
-		});
+		});*/
+		try {
+			MainCvGui window = new MainCvGui();
+			window.frmCvCreator.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -69,7 +53,7 @@ public class MainCvGui {
 	private void initialize() {
 		frmCvCreator = new JFrame();
 		frmCvCreator.setResizable(false);
-		frmCvCreator.setIconImage(Toolkit.getDefaultToolkit().getImage(MainCvGui.class.getResource("/com/sun/javafx/scene/web/skin/Paste_16x16_JFX.png")));
+		//frmCvCreator.setIconImage(Toolkit.getDefaultToolkit().getImage(MainCvGui.class.getResource("/com/sun/javafx/scene/web/skin/Paste_16x16_JFX.png")));
 		frmCvCreator.setTitle("CV Creator");
 		frmCvCreator.setBounds(100, 100, 458, 271);
 		frmCvCreator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -87,7 +71,7 @@ public class MainCvGui {
 		
 		JLabel lblCvCreatorVersion = DefaultComponentFactory.getInstance().createTitle("CV Creator Version 1.0");
 		lblCvCreatorVersion.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblCvCreatorVersion.setIcon(new ImageIcon(MainCvGui.class.getResource("/com/sun/javafx/scene/web/skin/Copy_16x16_JFX.png")));
+		//lblCvCreatorVersion.setIcon(new ImageIcon(MainCvGui.class.getResource("/com/sun/javafx/scene/web/skin/Copy_16x16_JFX.png")));
 		
 		JLabel label = new JLabel("Choose the format of the CV");
 		label.setFont(new Font("Tahoma", Font.BOLD, 14));

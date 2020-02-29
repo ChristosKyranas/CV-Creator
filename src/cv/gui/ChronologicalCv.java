@@ -1,18 +1,7 @@
 package cv.gui;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.text.MaskFormatter;
-
 import cv.generators.GeneratorFactory;
 import cv.generators.IGenerator;
-import cv.generators.LatexGenerator;
-import cv.generators.TxtGenerator;
-import cv.gui.FunctionalCv.TimeFormatter;
 import cv.main.Cv;
 import cv.main.CvFactory;
 import cv.main.Section;
@@ -20,37 +9,16 @@ import cv.main.SectionFactory;
 import cv.parsers.IParser;
 import cv.parsers.ParserFactory;
 
-import javax.swing.DefaultListModel;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JList;
-import javax.swing.JMenuBar;
-import javax.swing.JOptionPane;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.JTextField;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import java.awt.Frame;
-import java.awt.Dialog.ModalExclusionType;
-import java.awt.Dimension;
-import java.awt.Window.Type;
+import javax.swing.*;
 import javax.swing.border.BevelBorder;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import javax.swing.text.MaskFormatter;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.awt.event.ActionEvent;
-import javax.swing.JFormattedTextField;
 
 public class ChronologicalCv extends JFrame {
 
@@ -1003,8 +971,8 @@ public class ChronologicalCv extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
+	/*public static void main(String[] args) {
+		*//*EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					ChronologicalCv frame = new ChronologicalCv();
@@ -1015,7 +983,11 @@ public class ChronologicalCv extends JFrame {
 					e.printStackTrace();
 				}
 			}
-		});
-	}
+		});*//*
+		ChronologicalCv frame = new ChronologicalCv();
+
+
+		frame.setVisible(true);
+	}*/
 }
 
